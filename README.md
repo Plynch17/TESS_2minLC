@@ -32,8 +32,8 @@ best_period_days is the Lomb-Scargle peak in that sector. It is not automaticall
 - A local copy of the 2-minute SPOC light curves (about 30-40 GB per sector)
 - Network access only for match_catalogs.py
 
-    pip install numpy pandas astropy astroquery lightkurve pyarrow
-
+    pip install -r requirements.txt
+  
 Expected FITS layout:
 
     D:\sector1\... *_lc.fits
