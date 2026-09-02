@@ -17,7 +17,7 @@ combine_sectors.py | Stack those tables
 match_catalogs.py | VSX + SIMBAD cross-match
 TessClassificationv4.py | Frozen rules to paper tables
 
-Paper-facing files written by classify.py:
+Paper-facing files written by TessClassificationv4.py:
 
 - paper_known_EB.csv — catalogued EA/EB recovered at P or P/2
 - paper_new_EA_candidates.csv — uncatalogued detached-looking systems that pass the purity cuts
