@@ -1,6 +1,3 @@
-# TESS_2minLC
-A pipeline for 2min Lightcurve processing and classification from MAST
-
 # TESS 2-minute EA/EB search
 
 A reproducible pipeline that measures TESS 2-minute SPOC light curves stored on disk, cross-matches survivors to VSX and SIMBAD, and writes a high-purity eclipsing-binary catalogue.
@@ -98,6 +95,14 @@ extreme_depth | primary depth at or above 600 ppt; do not use depth in plots
 ## Citation
 
 TESS data: Ricker et al. 2015; SPOC 2-minute products via MAST.
+VSX: Watson, Henden and Price.
+SIMBAD: Wenger et al. 2000.
+
+If you publish a catalogue built with this code, keep tic_id, sector, t0_btjd, best_period_days, orbital_period_days, depths, and source_file in the public table.
+
+## Status
+
+I froze the classification rules on Sectors 1–22. I will process later sectors with the same four scripts and will not change the cuts until I have inspected the new-candidate plots.
 VSX: Watson, Henden and Price.
 SIMBAD: Wenger et al. 2000.
 
