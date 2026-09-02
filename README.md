@@ -43,10 +43,10 @@ sector01 and Sector1 are also accepted.
 
 ## Run order
 
-    python process_local.py --fits-root D:\ --out tables/metrics --sectors 1-22
+    python SectorProcessing.py --fits-root D:\ --out tables/metrics --sectors 1-22
     python combine_sectors.py --in tables/metrics --out tables/all_sectors_metrics.parquet
     python match_catalogs.py --in tables/all_sectors_metrics.parquet --out tables/match.csv
-    python classify.py --input tables/match.csv --out tables/classified
+    python TessClassificationv4.py --input tables/match.csv --out tables/classified
 
 Resume is built in. Interrupted sector runs pick up from the existing parquet. Catalog matching writes tables/match_progress.csv and can be restarted.
 
