@@ -95,8 +95,6 @@ extreme_depth | primary depth at or above 600 ppt; do not use depth in plots
 - MAST download trees
 - Multi-gigabyte metric dumps unless you use Git LFS or Zenodo
 
-Commit the four scripts, requirements.txt, and optionally the small paper CSVs.
-
 ## Citation
 
 TESS data: Ricker et al. 2015; SPOC 2-minute products via MAST.
