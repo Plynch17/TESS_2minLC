@@ -16,9 +16,9 @@ TessClassificationv4.py | Frozen rules to paper tables
 
 Paper-facing files written by TessClassificationv4.py:
 
-- paper_known_EB.csv — catalogued EA/EB recovered at P or P/2
+- paper_known_EB_Pmatch_or_P2.csv — catalogued EA/EB recovered at P or P/2
 - paper_new_EA_candidates.csv — uncatalogued detached-looking systems that pass the purity cuts
-- paper_composite.csv — hybrids, ellipsoidal variables, and large period mismatches
+- paper_composite_appendix.csv.csv — hybrids, ellipsoidal variables, and large period mismatches
 - manual_review.csv and rejected.csv — not science tables
 
 best_period_days is the Lomb-Scargle peak in that sector. It is not automatically the orbital period. Use orbital_period_days for known systems.
@@ -48,6 +48,8 @@ python TessClassificationv4.py --input tables/match.csv --out tables/classified
 Resume is built in. Interrupted sector runs pick up from the existing parquet. Catalog matching writes tables/match_progress.csv and can be restarted.
 
 Do not run match_catalogs.py on every raw TIC. The default prefilter keeps only status=ok rows with mean_flux >= 200, primary_depth_ppt >= 15, and peak_power >= 5.
+
+--fits-root is any directory that contains sectorN/ folders of official SPOC *_lc.fits from the MAST LC curl scripts.
 
 ## What the processor measures
 
